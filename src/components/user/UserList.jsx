@@ -7,6 +7,8 @@ import User from './userElement/User';
  * Whenever the user prop gets a new value this component re-renders. Users were added in the Content.jsx via the PersonFinder
  * If a Component has no States (State-less Component) you should Change the Component to a Function
  */
+
+
 export default class UserList extends React.Component {
 
     static propTypes = {
