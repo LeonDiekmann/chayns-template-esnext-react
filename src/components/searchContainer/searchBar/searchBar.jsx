@@ -1,6 +1,4 @@
 import React from 'react';
-import { Accordion, Button } from 'chayns-components/lib';
-
 
 
 export default class SearchBar extends React.Component {  
@@ -11,16 +9,14 @@ export default class SearchBar extends React.Component {
             searchString: ''
         }
         this.inputHandler = this.inputHandler.bind(this);
-        
+        this.searchText = null;
     }
 
     inputHandler(event) {
-        const index = event;
-        console.log(index)
+        this.searchText = event;
         clearTimeout(this.timer);
         this.timer = setTimeout(() => {
-            this.searchText = index;
-            this.onChange(this.searchText);
+            this.props.callback(this.searchText);
         }, 500);
     }
 

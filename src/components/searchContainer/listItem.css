@@ -1,0 +1,39 @@
+.ListItem__Image img {
+    height: 40px;
+    width: 40px;
+}
+
+.ListItem.ListItem--clickable {
+    cursor: pointer;
+}
+
+.ListItem .ListItem__head {
+    padding: 0 9px;
+    display: flex;
+    align-items: center;
+    height: 64px;
+}
+
+.ListItem .ListItem__head .ListItem__Image {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+.ListItem .ListItem__head .ListItem__Title .ListItem__Title--description {
+    margin: 0;
+    font-size: 85%;
+    opacity: .75;
+}
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, dl, dd, ol, ul, form, fieldset, legend, table, th, td, caption, hr {
+    margin: 0;
+    padding: 0;
+}
+
+.ListItem .ListItem__head .ListItem__Title .ListItem__Title--headline {
+    margin: 0;
+}
+
+.ListItem {
+    width: 100%;
+    border-bottom: 1px solid #494949;
+}
